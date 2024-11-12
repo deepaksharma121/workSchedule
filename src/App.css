@@ -1,38 +1,154 @@
-.App {
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header{
+  background-color: #9EDF9C;
   text-align: center;
+  padding: 1rem 0;
+  box-shadow: 0 4px 18px grey;
+  cursor: pointer;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1{
+  color: #B03052;
+  font-size: 30pt;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header:hover{
+  background-color: #FF9C73;
+  opacity: 0.9;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+main{
+  max-width: 80%;
+  max-height: 70%;
+  margin: 20px auto;
+  padding: 30px;
+  background-color: #F0C1E1;
+  box-shadow: 0 4px 18px grey;
+  border-radius: 15px;
+}
+.App{
+  background-color: #FFF7D1;
+}
+
+.task-form{
+  display: grid;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+  max-height: 200px;
+  max-width: 200px;
+}
+
+.task-form input,.task-form select,.task-form button{
+  padding: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  flex: 1;
+  border-radius: 10px;
+}
+
+button{
+  background-color: green;
   color: white;
+  border: none;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.mark-done{
+  padding: 10px;
+  font-size: 16px;
+  flex: 1;
+  border-radius: 15px;
+  background-color: crimson transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.task-list{
+  background-color: #FA7070;
 }
+
+.first{
+  background-color: #FA7070;
+  border-color: #FA7070;
+}
+
+table{
+  width: 100%;
+  margin-top: 20px;
+  background-color: #D3EE98;
+  border: 1px solid #ddd;
+}
+
+table th,table td{
+  padding: 20px;
+  
+  text-align: left;
+}
+
+table th{
+  background-color: #A594F9;
+  color: black;
+  border-radius: 10px;
+}
+
+.completed-task-list{
+  margin-top: 20px;
+  background-color: #F0C1E1;
+}
+
+.completed-task{
+  padding: 10px;
+  border: 1px solid crimson;
+  border-radius: 5px;
+  background-color: #9EDF9C;
+}
+
+.completed-task h2{
+  color: #28a745;
+}
+
+h2{
+  font-size: 1.3rem;
+}
+
+.heading{
+  color:darkcyan;
+  padding-bottom: 5px;
+  text-decoration: underline;
+}
+
+.cheading{
+  color: darkgreen;
+  text-decoration: underline;
+}
+
+footer{
+  text-align: center;
+  font-size: 15pt;
+  padding: 10px;
+  font-weight: bold;
+  background-color: #a29cdf transparent;
+  color: rgba(255, 0, 0, 0.68);
+  text-shadow: 2px 2px 4px yellow;
+}
+
+tbody,td{
+  font-size: 15pt;
+  font-weight: 500;
+}
+
